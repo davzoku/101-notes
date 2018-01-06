@@ -50,6 +50,8 @@ docker run -p 80:80
 
 `-p` flag for port. 80 (external port) : 80 (internal port)
 
+`-d` detached mode; run container in background
+
 ## Layers
 
 An image is a set of read-only layers, container has a thin R/W layer
@@ -97,6 +99,14 @@ docker push <username>/<imagename>
 ```
 
 [nginx-test](https://hub.docker.com/r/davzoku/nginx-test/)
+
+## Linking Containers
+
+##TODO
+
+## Container Networks
+
+##TODO
 
 ## [Docker Swarm](https://www.youtube.com/watch?v=KC4Ad1DS8xU)
 
