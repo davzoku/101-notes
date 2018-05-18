@@ -8,7 +8,7 @@ Hope it helps anyone having a coding interview or for self-learning. The program
 
 ## A
 
-### Agile + Scrum + Kanban
+### Agile + Scrum + Kanban + SAFe
 
 [The Ultimate Agile Dictionary](https://www.smartsheet.com/ultimate-agile-dictionary)
 
@@ -66,12 +66,12 @@ Ensure observance of DoD.
 
 There are 3 levels (Read from bottom-to-top)
 
-1. 	__**Portfolio Level**__
+1. 	**_Portfolio Level_**
 - Dictate all underlying trains by allocating budget and investment themes
 - Create backlog of *portfolio level epics* (big user stories) that needs to be addressed by the train's product managers in upcoming PSI
 - *Kanban System*: to ensure cohesiveness by limiting the amount of portfolio level initiatives and make sure all trains are focused on finishing the initiatives.
 
-2. 	__**Program Level**__ 
+2. 	**_Program Level_** 
 - Scaled-up version of the Team level
 - Made up of multiple teams working together (50-125 ppl)
 - **Product Shippable Increment (PSI)**: 5 sprints by default, to deliver a bigger working software
@@ -86,37 +86,50 @@ There are 3 levels (Read from bottom-to-top)
 - **Architectual Runway**: 
 
 
-3. __**Team**__ 
+3. **_Team Level_**
 - Works like standard scrum (3-9 ppl)
 - Cross-functional; Includes developers and testers
 
 #### Other Agile Terms
 
-- **Backlog**:
+**_Backlog_**:
 A backlog is a changing list of product requirements based on the customer’s needs. The backlog is not a to-do list; rather, it is a list of all the desired features for the product. The Agile team uses the backlog to prioritize features and understand which features to implement first. 
 
 *How It’s Used*: The development team pulls work from the backlog to complete during each iteration. The backlog may change throughout the development process as the team learns more about the customer’s requirements.
 
-- **Definition of Done**:
+**_Definition of Done (DoD)_**:
 refers to a set of predetermined criteria that a product needs to meet in order to be considered as being done. 
 
 *How it’s Used*: The team agrees upon a list of criteria which must be met before a product increment is considered to be ‘done’—that is, all design, coding, testing, and documentation have been completed, and the code has been fully integrated into the system. If a task does not meet the Definition of Done criteria, it does not count toward team velocity.
 
+___
+
+
 ### Asynchronous vs Synchronous
+
+___
+
 
 ### Assessment
 
-** Risk Assessment **
+**Risk Assessment**
 
-** Vulnerability Assessment **
+**Vulnerability Assessment**
+
+___
+
 
 ## B
 
 ### Big Data
+___
+
 
 ## C
 
 ### Collection (Java)
+___
+
 
 #### 
 
@@ -126,6 +139,8 @@ refers to a set of predetermined criteria that a product needs to meet in order 
 ## E 
 
 ### Exception
+___
+
 
 ## F
 
@@ -151,6 +166,8 @@ refers to a set of predetermined criteria that a product needs to meet in order 
 - The difference between an interface and a regular class is that in an interface you can not implement any of the declared methods. Only the class that "implements" the interface can implement the methods. The C++ equivalent of an interface would be an abstract class (not EXACTLY the same but pretty much).
 - Also java doesn't support multiple inheritance for classes. This is solved by using multiple interfaces.
 
+___
+
 ## J
 
 ## K
@@ -164,16 +181,22 @@ refers to a set of predetermined criteria that a product needs to meet in order 
 - Turing machine program can be translated into an equivalent Lambda Calculus program and vice versa. They are formally equivalent.
 - present in most languages today
 - see Y combinator / Y Operator; encoding recursion
+___
+
 
 ## M
 
 ### MVC (Model, View, Controller)
+___
+
 
 ## N
 
 ## O
 
 ### Object-Oriented Analysis and Design (OOAD)
+___
+
 
 ## P
 
@@ -186,12 +209,33 @@ Functional programming – treats programs as evaluating mathematical functions 
 Object-oriented programming (OOP) – organizes programs as objects: data structures consisting of datafields and methods together with their interactions.
 Event-driven programming – program control flow is determined by events, such as sensor inputs or user actions (mouse clicks, key presses) or messages from other programs or threads.
 Automata-based programming – a program, or part, is treated as a model of a finite state machine or any other formal automaton.
+___
+
 
 ## R
 
 ## S
 
 ### Software Requirements Specification (SRS)
+– A complete description of the *software’s purpose and functionality*
+– Details as to how the software will perform in terms of *speed, response time, availability, portability, maintainability, recovery speed and more*
+– *Use cases* of how users will use the software
+– The definition of how the application with *interact with other hardware and program*
+– *Non-functional requirements* (e.g: performance engineering requirements, quality standards, or design constraints)
+
+**Simple SRS Outline**
+1. Purpose
+2. Scope
+3. System Overview
+4. References
+5. Definitions
+6. Use Cases
+7. Functional requirements
+8. Non-functional requirements
+
+
+___
+
 
 ## T
 
@@ -202,6 +246,9 @@ Automata-based programming – a program, or part, is treated as a model of a fi
 - PyTorch: Cousin of lua-based Torch framework used at Facebook
 
 **Tensor**
+
+___
+
 
 ### Types of Programming Languages
 
@@ -219,6 +266,9 @@ Eg. Javascript, Python, Ruby
 
 Object-Oriented Programming 
 
+___
+
+
 ### Types of Testing
 
 #### Black Box vs White Box Testing
@@ -227,10 +277,54 @@ Object-Oriented Programming
 
 ### SIT = System Integration Testing
 
+#### Testing Frameworks: Selenium
+- Open source testing framework for web applications
+
+- Selenium Webdriver *supports most of all browsers* to run your test cases and *many programming languages like C#, Java, Python, Ruby, .Net, Perl, PHP, etc..* to create and modify your test scripts.
+
+___
+
+
 
 ## U
 
-### UML
+### Unified Modelling Language (UML)
+- graphical language for visualizing, specifying, constructing, and documenting information about software-intensive systems.
+
+- Common visualization tools: *Microsoft Visio, Lucid Chart, UMLet, PlantUML*
+
+**_Structural UML diagrams_**
+describes the static features of the system
+
++ **Class diagram**
++ Component diagram
++ Composite structure diagram
++ Deployment diagram
++ Object diagram
++ Package diagram
++ Profile diagram
+
+**_Behavioral UML diagrams_**
+describes the interaction in the system;
+shows dynamic behavior
+
++ **Activity diagram**
++ Communication diagram
++ Interaction overview diagram
++ **Sequence diagram**
++ State diagram
++ Timing diagram
++ **Use case diagram**
+
+**TLDR: When to Use**
++ Use **class diagram** to describe classes and show relationships between class
++ Use **activity diagram** to show flow of __actions__, esp good at conditional structures, loops, concurrency
++ Use **sequence diagram** to show __interactions__ and sequence of messages flowing from object to another and the time-order
++ use **use case diagram** during analysis phase to identify system functionality
+
+- For more details: See [dazoku/UML-Study](https://github.com/davzoku/UML-study)
+___
+
 
 ## V
 
